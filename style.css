@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Niconne&display=swap');
 
+:root {
+    /* --heading-1: darkgoldenrod; */
+    /* --heading-2: #eee; */
+    /* --primary-text-1: #111; */
+    /* --bg-1: #ccc; */
+    --bg-2: #efefef;
+    --darkgold: darkgoldenrod;
+    /* --bg-4: #333; */
+    --dark-hover: #111;
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
 body {
+    background-color: var(--bg-2);
     margin: 0;
     padding: 0;
     font-family: 'Figtree', sans-serif;
@@ -21,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    border-right: 1px dotted var(--darkgold);
 }
 
 .menu-icon {
@@ -57,12 +70,12 @@ body {
 
 .social-link {
     font-size: 2rem;
-    color: #777;
+    color: var(--darkgold);
     transition: color 0.3s;
 }
 
 .social-link:hover {
-    color: darkgoldenrod;
+    color: var(--dark-hover);
 }
 
 .year {
@@ -95,7 +108,7 @@ body {
     font-size: 3.5rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
-    color: goldenrod;
+    color: var(--darkgold);
     text-align: center;
 }
 
@@ -371,7 +384,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     border-radius: 0.9rem; 
     border: 0.2rem solid goldenrod;
 }
@@ -432,7 +445,7 @@ body {
     width: 60rem;
     margin: 5rem;
     background-color: #15141b;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .room-img {
